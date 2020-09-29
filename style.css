@@ -352,6 +352,35 @@
     font-weight: 1000;
 }
 
+.why-item{
+    padding: 0px 20px 0px 20px;
+}
+#why-item-2{
+    padding-top: 50px;
+}
+.careerkart-img{
+    width: 300px;
+}
+.main-left{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.main-left .check{
+    color: #2A80B9;
+    font-size: 30px;
+    margin-right: 5px;
+}
+.main-left .heading{
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+}
+.main-left .content{
+    float: left;
+    font-size: 13px;
+}
+
 /*-------------------- ./Why Section ----------------------------*/
 
 
