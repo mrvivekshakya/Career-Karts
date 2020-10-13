@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <form action="">
+        <input type="text" name="">
+        <input type="submit">
+        <span id="nameError">hh</span>
+    </form>
+    <script>
+        
+        const errors1 = {
+            "nameError": "nothing"
+        };
+        
+        // function validateInput(element) {
+        //     const alphabetRegex = /^[a-zA-Z]*$/;
+        
+        //     if(element.value){
+        //         if(alphabetRegex.test(element.value)){
+        //             errors["nameError"] = "";
+        //         }else{
+        //             errors["nameError"] = "Name is invalid."    
+        //         }
+        //     }else{
+        //         errors["nameError"] = "Name cannot be null."
+        //     }
+        // }
+        let a = 50;
+        let h = document.getElementById('hh').style;
+        h.margin = `${a}px`;
+        document.getElementById("nameError").innerHTML = errors1.nameError;
+            </script>  
+</body>
+</html>

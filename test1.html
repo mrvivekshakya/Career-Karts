@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            margin-top: 200px;
+            background-color: tomato;
+        }
+    </style>
+    <script>
+        function myMethod(){
+            // var interval = setInterval(myTimer ,1000);
+            let a = document.getElementById("div1").style;
+
+            let i = 180;
+            while(i != 0){
+                a.transform = "rotate("+i+"deg)";
+                i = i-1;
+            }
+            a.backgroundColor = "yellow";
+        }
+    </script>
+</head>
+<body>
+    <div class="div1" id="div1"></div>
+    <button onclick="myMethod()">Rotate it</button>
+    
+</body>
+</html>
+
+          <!-- <div class="dropdown" style="position: absolute;">
+                            <div class="dropdown-section" id="dropdown-section-1"></div>
+                            <div class="dropdown-section" id="dropdown-section-2">
+                                <ul>
+                                    <li><a href="">Agriculture</a></li>
+                                    <li><a href="">Architecture</a></li>
+                                    <li><a href="">Arts and Design</a></li>
+                                    <li><a href="">Commerce</a></li>
+                                    <li><a href="">Education</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-section" id="dropdown-section-3">
+                                <ul></ul>
+                                <li><a href="">Engineering</a></li>
+                                <li><a href="">Fashion Technology</a></li>
+                                <li><a href="">Hospitality and Tourism</a></li>
+                                <li><a href="">Humanities and Social Sciences</a></li>
+                                <li><a href="">Industrial Training Institute(ITI)</a></li>
+                            </div>
+                            <div class="dropdown-section" id="dropdown-section-4">
+                                <ul></ul>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </div>
+                            <div class="dropdown-section" id="dropdown-section-5">
+                                <ul></ul>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </div>
+                        </div> -->

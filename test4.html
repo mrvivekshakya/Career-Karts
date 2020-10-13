@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate() {
+            const a = document.getElementById('name').value;
+            document.getElementById('validName').innerHTML = a;
+        }
+    </script>
+</head>
+<body>
+    <form action="#">Name:</label>
+        <input type="text" id="name" class="name" name="name" oninput="validate()" required/>
+        <div class="" id="validName"></div>
+    </form>
+</body>
+</html>
