@@ -2,16 +2,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="shortcut icon" href="img/career_favicon_white.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Home | Career Karts</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="shortcut icon" href="img/career_favicon_white.png" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+<script src="js/index.js"></script>
+<title>Home | Career Karts</title>
 </head>
 <body>
-    <!----------------------------------------- header ------------------------------------------------>
-    <div class="main-container header-background"></div>
+<!----------------------------------------- header ------------------------------------------------>
+<div class="main-container header-background">
+    <div class="container">
+        <div class="menu">
+            <ul class="ul1">
+                <li class="right li1" style="transform: skewX(-15deg);margin-left: -10px;margin-right: 10px;"><a href="#" class="right-link a1" style="background-color: #061034;padding-left: 20px;"><i class="fas fa-book-open" style="transform: skewX(15deg);font-size: 40px;color: white;"></i></a></li>
+                <li class="li1"><a href="#" style="padding: 0px;" class="a1"><div class="career">Career Karts</div><div class="learn">LEARN, UNITY, HONESTY</div></a></li>
+                <li class="li1"><a href="#" class="a1">HOME</a></li>
+                <li class="li1"><a href="#" class="for-dropdown a1">STREAM</a>
+                    <ul style="position: absolute;" class="dropdown">
+                            <li class="right li2" id="dowpdown-item1"><a href="#" class="" style="padding-right: 20px;background-color: red;"><span style="transform: skewX(15deg);position: absolute;margin-left: 60px;margin-top: -80px;"><span style="transform: skewX(15deg);font-weight: 500;margin-left: 5px;color: white;"><div style="font-size: 25px;font-weight: 700;">STREAMS</div><span style="font-size: 12px;font-weight: 600;letter-spacing: 0px;">WE PROMISE TO PROVIDE BEST</span></span></span></a></li>
+                            <li class="li2" id="dowpdown-item2">
+                                <ul>
+                                    <li><a href="">Agriculture</a></li>
+                                    <li><a href="">Architecture</a></li>
+                                    <li><a href="">Arts and Design</a></li>
+                                    <li><a href="">Commerce</a></li>
+                                    <li><a href="">Education</a></li>
+                                </ul>
+                            </li>
+                            <li class="li2" id="dowpdown-item3">
+                                <ul>
+                                    <li><a href="">Engineering</a></li>
+                                    <li><a href="">Fashion Technology</a></li>
+                                    <li><a href="">Hospitality and Tourism</a></li>
+                                    <li><a href="">Humanities and Social Sciences</a></li>
+                                    <li><a href="">Industrial Training Institute(ITI)</a></li>
+                                </ul>
+                            </li>
+                            <li class="li2" id="dowpdown-item4">
+                                <ul>
+                                    <li><a href="">Information Technology</a></li>
+                                    <li><a href="">Low</a></li>
+                                    <li><a href="">Management</a></li>
+                                    <li><a href="">Mass Communication</a></li>
+                                    <li><a href="">Medical</a></li>
+                                </ul>
+                            </li>
+                            <li class="li2" id="dowpdown-item5">
+                                <ul>
+                                    <li><a href="">Paramedical</a></li>
+                                    <li><a href="">Polytechnic</a></li>
+                                    <li><a href="">Science</a></li>
+                                    <li><a href="">Sports</a></li>
+                                    <li><a href="">Yoga</a></li>
+                                </ul>
+                            </li>
+
+                        </ul></li>
+                    <li class="li1"><a href="#" class="a1">ENTRANCE EXAM</a></li>
+                    <li class="li1"><a href="#" class="a1">MODEL PAPERS</a></li>
+                    <li class="li1"><a href="#" class="a1">BLOG</a></li>
+                    <li class="li1"><a href="#" class="a1">PSYCHOMETRIC TEST</a></li>
+                    <li class="right li1" style="transform: skewX(-15deg);margin-right: -10px;"><a href="#" class="right-link a1" style="background-color: #2A80B9;padding-right: 20px;"><i class="fas fa-unlock lock" style="transform: skewX(15deg);color: white;"><span style="transform: skewX(15deg);color: white;font-weight: 500;margin-left: 5px;">LOGIN</span></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <!----------------------------------------- ./header ------------------------------------------------>
 
     <!-----------------------------------------Search------------------------------------------------>
@@ -78,16 +135,54 @@
     <!-----------------------------------------./Explore------------------------------------------------>
 
     <!-----------------------------------------Registration------------------------------------------------>
+    <!-- pre -->
+    <div class="main-container main1-title">
+        <div class="container col2">
+            <div class="slant-form-title">
+                <div class="main-title">
+                    <h1>Register Now</h1>
+                    <div class="create">Create your account and browse<br/> thousand of courses!</div>
+                    <div class="forslant-title"></div>
+                </div>               
+            </div>
+            <div class="content-title"></div>
+        </div>
+        <div class="forslant1-title"></div>
+    </div>
+    <!-- ./pre -->
     <div class="main-container main1">
         <div class="container col2">
             <div class="slant-form">
                 <div class="main">
-                    kdjflksd
-                    dfdf
+                    <form action="#" class="register-form">
+                        <label for="name">YOUR FULL NAME</label><br/>
+                        <input type="text" id="name" class="name" name="name" placeholder="Your Name" oninput="validate()" required/><br/>
+                        <div class="valid-msg" id="nameMsg"></div>
+                        <label for="email">YOUR EMAIL</label><br/>
+                        <input type="email" id="r_email" name="email" placeholder="sample@gmail.com" required/><br/>
+                        <label for="mobile">MOBILE NUMBER</label><br/>
+                        <input type="text" name="mobile" id="mobile" placeholder="+91 90271498904" required/><br/>
+                        <label for="colleges">COLLEGES/COURSES</label><br/>
+                        <input type="text" name="colleges" id="colleges" placeholder="MCA/MTECH" required/><br/>
+                        <input type="submit" value="SIGN UP NOW" class="signup" id="signup"><br/>
+                    </form>
                     <div class="forslant"></div>
                 </div>               
             </div>
-            <div class="content"></div>
+            <div class="register-content">
+                <div class="h1">We Have More<br/>Than <span style="color: #2A80B9;">28,690+ Students</span> Currently <br/> Using Campus</div>
+                <div class="col3 social-counter">
+                    <div class="linkedin">
+                        8,759<br/><span>LINKEDIN</span>
+                    </div>
+                    <div class="facebook">
+                        10,203<br/><span>FACEBOOK</span>
+                    </div>
+                    <div class="instagram">
+                        10,593<br/><span>INSTAGRAM</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="forslant1"></div>
     </div>
@@ -106,6 +201,54 @@
         <div class="container col3">
             <div class="popular-item" id="popular-item-1">
                 <img src="img/img1.png" class="popular-img">
+                <div class="popular-hover-content p-h-c">
+                    <div class="heading">AGRICULTURE</div>
+                    <div class="content">Agriculture field offers job apportuniteis<br> in horticulture, poulty farming, plant science, soil science, food science,<br> animal science, etc.</div>
+                </div>
+                <p class="popular-more"><i class="fas fa-angle-right popular-arrow"></i></p>
+            </div>
+            <div class="popular-item" id="popular-item-2">
+                <img src="img/img2.png" class="popular-img">
+                <div class="popular-hover-content">
+                    <div class="heading">AGRICULTURE</div>
+                    <div class="content">Agriculture field offers job apportuniteis<br> in horticulture, poulty farming, plant science, soil science, food science,<br> animal science, etc.</div>
+                </div>
+                <p class="popular-more"><i class="fas fa-angle-right popular-arrow"></i></p>
+            </div>
+            <div class="popular-item" id="popular-item-3">
+                <img src="img/img3.png" class="popular-img">
+                <div class="popular-hover-content">
+                    <div class="heading">AGRICULTURE</div>
+                    <div class="content">Agriculture field offers job apportuniteis<br> in horticulture, poulty farming, plant science, soil science, food science,<br> animal science, etc.</div>
+                </div>
+                <p class="popular-more"><i class="fas fa-angle-right popular-arrow"></i></p>
+            </div>
+            <div class="popular-item" id="popular-item-4">
+                <img src="img/img3.png" class="popular-img">
+                <div class="popular-hover-content">
+                    <div class="heading">AGRICULTURE</div>
+                    <div class="content">Agriculture field offers job apportuniteis<br> in horticulture, poulty farming, plant science, soil science, food science,<br> animal science, etc.</div>
+                </div>
+                <p class="popular-more"><i class="fas fa-angle-right popular-arrow"></i></p>
+            </div>
+            <div class="popular-item" id="popular-item-5">
+                <img src="img/img1.png" class="popular-img">
+                <div class="popular-hover-content">
+                    <div class="heading">AGRICULTURE</div>
+                    <div class="content">Agriculture field offers job apportuniteis<br> in horticulture, poulty farming, plant science, soil science, food science,<br> animal science, etc.</div>
+                </div>
+                <p class="popular-more"><i class="fas fa-angle-right popular-arrow"></i></p>
+            </div>
+            <div class="popular-item" id="popular-item-6">
+                <img src="img/img2.png" class="popular-img">
+                <div class="popular-hover-content">
+                    <div class="heading">AGRICULTURE</div>
+                    <div class="content">Agriculture field offers job apportuniteis<br> in horticulture, poulty farming, plant science, soil science, food science,<br> animal science, etc.</div>
+                </div>
+                <p class="popular-more"><i class="fas fa-angle-right popular-arrow"></i></p>
+            </div>
+            <div class="popular-item" id="popular-item-1">
+                <img src="img/img1.png" class="popular-img">
                 <div class="popular-hover-content">
                     <div class="heading">AGRICULTURE</div>
                     <div class="content">Agriculture field offers job apportuniteis<br> in horticulture, poulty farming, plant science, soil science, food science,<br> animal science, etc.</div>
@@ -114,34 +257,18 @@
             </div>
             <div class="popular-item" id="popular-item-2">
                 <img src="img/img2.png" class="popular-img">
+                <div class="popular-hover-content">
+                    <div class="heading">AGRICULTURE</div>
+                    <div class="content">Agriculture field offers job apportuniteis<br> in horticulture, poulty farming, plant science, soil science, food science,<br> animal science, etc.</div>
+                </div>
                 <p class="popular-more"><i class="fas fa-angle-right popular-arrow"></i></p>
             </div>
             <div class="popular-item" id="popular-item-3">
                 <img src="img/img3.png" class="popular-img">
-                <p class="popular-more"><i class="fas fa-angle-right popular-arrow"></i></p>
-            </div>
-            <div class="popular-item" id="popular-item-4">
-                <img src="img/img3.png" class="popular-img">
-                <p class="popular-more"><i class="fas fa-angle-right popular-arrow"></i></p>
-            </div>
-            <div class="popular-item" id="popular-item-5">
-                <img src="img/img1.png" class="popular-img">
-                <p class="popular-more"><i class="fas fa-angle-right popular-arrow"></i></p>
-            </div>
-            <div class="popular-item" id="popular-item-6">
-                <img src="img/img2.png" class="popular-img">
-                <p class="popular-more"><i class="fas fa-angle-right popular-arrow"></i></p>
-            </div>
-            <div class="popular-item" id="popular-item-1">
-                <img src="img/img1.png" class="popular-img">
-                <p class="popular-more"><i class="fas fa-angle-right popular-arrow"></i></p>
-            </div>
-            <div class="popular-item" id="popular-item-2">
-                <img src="img/img2.png" class="popular-img">
-                <p class="popular-more"><i class="fas fa-angle-right popular-arrow"></i></p>
-            </div>
-            <div class="popular-item" id="popular-item-3">
-                <img src="img/img3.png" class="popular-img">
+                <div class="popular-hover-content">
+                    <div class="heading">AGRICULTURE</div>
+                    <div class="content">Agriculture field offers job apportuniteis<br> in horticulture, poulty farming, plant science, soil science, food science,<br> animal science, etc.</div>
+                </div>
                 <p class="popular-more"><i class="fas fa-angle-right popular-arrow"></i></p>
             </div>
         </div>
@@ -247,6 +374,204 @@
     </div>
 
     <!----------------------------------------- ./Why Section------------------------------------------------>
+    <!----------------------------------------- Top Course/Exam ------------------------------------------------>
+    <div class="main-container courses-exams">
+        <div class="courses">
+            <div class="course-title">
+                <div class="what">WHAT MAKE EASY TO USE CAREER KART</div>
+                <div class="top-courses">TOP COURSES LISTING</div>
+                <p class="links"><a href="#">ATMA, IIFT, JEE, MAINS, IRMA, NMAT, SNAP, CMAT,<br>ATMA, IIFT, JEE, MAINS, IRMA, NMAT, SNAP, CMAT,<br>ATMA, IIFT, JEE, MAINS, IRMA, NMAT, SNAP, CMAT,<br>ATMA, IIFT, JEE, MAINS, IRMA, NMAT, SNAP, CMAT,<br>ATMA, IIFT, JEE, MAINS, IRMA, NMAT, SNAP, CMAT,<br>ATMA, IIFT, JEE, MAINS, IRMA, NMAT</a></p>
+            </div>
+            <div class="-course-forslant"></div>
+        </div>
+        <div class="exams">
+            <div class="exam-title">
+                <div class="what">WHAT MAKE EASY TO USE CAREER KART</div>
+                <div class="top-exams">TOP EXAMS LISTING</div>
+                <p class="links"><a href="#">ATMA, IIFT, JEE, MAINS, IRMA, NMAT, SNAP, CMAT,<br>ATMA, IIFT, JEE, MAINS, IRMA, NMAT, SNAP, CMAT,<br>ATMA, IIFT, JEE, MAINS, IRMA, NMAT, SNAP, CMAT,<br>ATMA, IIFT, JEE, MAINS, IRMA, NMAT, SNAP, CMAT,<br>ATMA, IIFT, JEE, MAINS, IRMA, NMAT, SNAP, CMAT,<br>ATMA, IIFT, JEE, MAINS, IRMA, NMAT, SNAP, CMAT,<br>ATMA, IIFT, JEE, MAINS, IRMA, NMAT, SNAP, CMAT,<br>ATMA, IIFT, JEE,</a></p>
+            </div>
+            <div class="exam-forslant"></div>
+        </div>
+    </div>
+    <!----------------------------------------- ./Top Course/Exam ------------------------------------------------>
+    <!----------------------------------------- Student Testimonials ------------------------------------------------>
+    <div class="main-container student-section">
+        <div class="container col1">
+            <div class="student-title">
+                <P class="what">What Students Says!</P>
+                <p class="still">Still need convincing? Checkout What people are saying about careerkart.</p>   
+            </div>
+        </div>
+
+        <div class="container small">
+            <div class="small-pic"></div>
+            <div class="small-pic"></div>
+            <div class="small-pic"></div>
+            <div class="small-pic"></div>
+            <div class="small-pic"></div>
+            <div class="small-pic"></div>
+        </div>
+        <div class="container">
+            <div class=" student-detail">
+                <p><i class="fas fa-angle-left"></i><span class="big-pic"></span><i class="fas fa-angle-right"></i></p>
+                <div class="name">VIVEK SHAKYA</div>
+                <div class="dropbox">Dropbox</div>
+                <div class="content">After my completion of BCA, I was confused about wheather to persue MBA or MCA through<br> careerkarts. I got valuabe information about MCA program, it provided me with the career-<br> prospects, specialization, nature of work and work areas.</div>   
+                <div class="student-slant"></div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <!----------------------------------------- ./Student Testimonials ------------------------------------------------>
+
+    <!----------------------------------------- Recent News ------------------------------------------------>
+    <div class="main-container">
+        <div class="container col1">
+            <div class="news-title">
+                <P class="recent">Recent News<a href="#" class="news-see-btn">GO TO NEWS</a></P>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="container col3">
+            <div class="news-item" id="news-item-1">
+                <img src="img/img1.png" class="news-img">
+                <div class="heart"><i class="far fa-comments comment"></i> 13 <i class="fas fa-heart heart"></i> 128</div>
+                <div class="heading">Best booming career options</div>
+                <div class="content">All about the same time, Rahul Roy Chaudhary took charge of google team that oversees...</div>
+                <div class="news-read-more">
+                    <a href="#" class="news-read-link">LOAD MORE</a>
+                </div>
+            </div>
+            <div class="news-item" id="news-item-2">
+                <img src="img/img2.png" class="news-img">
+                <div class="heart"><i class="far fa-comments"></i> 13 <i class="fas fa-heart"></i> 128</div>
+                <div class="heading">Top 10 Collages for IT in India</div>
+                <div class="content">All about the same time, Rahul Roy Chaudhary took charge of google team that oversees...</div>
+                <div class="news-read-more">
+                    <a href="#" class="news-read-link">LOAD MORE</a>
+                </div>
+            </div>
+            <div class="news-item" id="news-item-3">
+                <img src="img/img3.png" class="news-img">
+                <div class="heart"><i class="far fa-comments"></i> 13 <i class="fas fa-heart"></i> 128</div>
+                <div class="heading">Top 10 Vocation Courses</div>
+                <div class="content">All about the same time, Rahul Roy Chaudhary took charge of google team that oversees...</div>
+                <div class="news-read-more">
+                    <a href="#" class="news-read-link">LOAD MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="container col1">
+            <div class="news-read-more">
+               
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------- ./Recent News ------------------------------------------------>
+
+    <!----------------------------------------- Contact Form ------------------------------------------------>
+    <div class="main-container form-main">
+        <div class="container">
+            <div class="form-title">
+                <p class="having">Having my Query?</p>
+                <p class="feel">Feel Free to Contact Us</p>
+                <div><input type="text" placeholder="Your Subject" id="subject" name="subject" class="form-subject"></div>
+                <div><textarea name="message" id="message" cols="30" rows="10" class="form-message" placeholder="Your Message"></textarea></div>
+                <p><button class="send-btn">Send Your Query</button></p>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------- ./Contact Form ------------------------------------------------>
+
+    <!----------------------------------------- Contact Detail ------------------------------------------------>
+    <div class="main-container">
+        <div class="container col3">
+            <div class="address-item col2" id="address-item-1">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="text">#3, first floor Raghushree Market,<br>Ajmeri Gate, New Delhi, 110006</div>
+            </div>
+            <div class="address-item col2" id="address-item-2">
+                <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="text">+91 9810704088</div>
+            </div>
+            <div class="address-item col2" id="address-item-3">
+                <div class="icon"><i class="fas fa-envelope"></i></div>
+                <div class="text">Info@careerkarts.com</div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------- ./Contact Detail ------------------------------------------------>
+
+    <!----------------------------------------- Footer ------------------------------------------------>
+    <div class="main-container main-footer">
+        <div class="container footer">
+            <div class="footer-item" id="footer-item-1">
+                <div class="col2">
+                    <div class="career_favicon_blue_div"><img src="img/career_favicon_blue.png" alt="career_favicon_blue" class="career_favicon_blue"></div>
+                    <div>
+                        <div class="footer-careerkarts">Careerkart</div>
+                        <div class="learn">LEARN, UNITY, HONESTY</div>
+                    </div>
+                </div>
+                <div class="content">Careerkart is a single-window-solution for students, For taking decision-related to course and college. Careerkarts help to take the final decision for UG and PG Courses and Collages.</div>
+                <div class="icons"><a href="#" class="active"><i class="fab fa-twitter twitter"></i></a> <a href="#"><i class="fab fa-facebook-square facebook"></i></a> <a href="#"><i class="fab fa-google-plus-g google-plus"></i></a> <a href="#"><i class="fas fa-globe globe"></i></a></div>
+            </div>
+            <div class="footer-item" id="footer-item-2">
+                <ul>
+                    <li class="footer-item-heading">QUICK LINKS</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Stream</a></li>
+                    <li><a href="#">Entrance Exam</a></li>
+                    <li><a href="#">Model Papers</a></li>
+                    <li><a href="#">Blogs/News</a></li>
+                    <li><a href="#">Psychometric Test</a></li>
+                </ul>
+            </div>
+            <div class="footer-item" id="footer-item-3">
+                <ul>
+                    <li class="footer-item-heading">EXAMS</li>
+                    <li><a href="#">JEE Main</a></li>
+                    <li><a href="#">JEE Advanced</a></li>
+                    <li><a href="#">NEET</a></li>
+                    <li><a href="#">CAT</a></li>
+                    <li><a href="#">CLAT</a></li>
+                </ul>
+            </div>
+            <div class="footer-item" id="footer-item-4">
+                <ul>
+                    <li class="footer-item-heading">RATING 2020</li>
+                    <li><a href="#">Overall College Ranking in Inida</a></li>
+                    <li><a href="#">Top Enginnering College in Inida</a></li>
+                    <li><a href="#">Top Management Collages in Inida</a></li>
+                    <li><a href="#">Top Universities in Inida</a></li>
+                    <li><a href="#">Top Collages in Inida</a></li>
+                </ul>
+            </div>
+            <div class="footer-item" id="footer-item-5">
+                <ul>
+                    <li class="heading">SUBSCRIBE US</li>
+                    <li class="this-sounded">This sounded a very good reason, and Alice was quite pleased.</li>
+                    <li class="mailbox"><input type="email" placeholder="E-mail" id="email" name="email" class="mail-input-box"><a href="#" class="mail-icon"><i class="far fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------- ./Footer ------------------------------------------------>
+    <!----------------------------------------- Copyright ------------------------------------------------>
+    <div class="main-container copyright">
+        <div class="container">
+            <div class="copyright-content">Copyright @ 2020 Careerkarts. All Rights Reserved.</div>
+        </div>
+    </div>
+    <!----------------------------------------- ./Copyright ------------------------------------------------>
+
+
+
 
 
 
