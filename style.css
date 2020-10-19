@@ -1,4 +1,4 @@
-/*--Master Branch--*/
+/*--Responsive Branch--*/
 /*-------------------- General CSS ----------------------------*/
 *{
     margin: 0;
@@ -35,12 +35,19 @@
     background-color: #061034;
 }
 /*Media Query*/
-/* @media only screen and (max-width: 550px){
+@media only screen and (max-width: 900px){
     .col3{
-        display: grid;
         grid-template-columns: auto auto;
     }
-} */
+} 
+@media only screen and (max-width: 768px){
+    .col3{
+        grid-template-columns: auto;
+    }
+    .col2{
+        grid-row: auto;
+    }
+} 
 /*..Media Query*/
 /*-------------------- ./General CSS ----------------------------*/
 /*-------------------- Header CSS ----------------------------*/
@@ -125,8 +132,8 @@
 }
 
 /******Dropdown*******/
-.fordropdown:hover{
-    display: none;
+.for-dropdown:hover + .dropdown{
+    display: block;
 }
 
 /*********************/
@@ -136,6 +143,8 @@
     list-style-type: none;
     background-color: white;
     overflow: hidden;
+    display: block;
+    
 }
 .dropdown .li2{
     display: inline-block;
