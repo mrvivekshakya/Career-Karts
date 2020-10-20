@@ -154,16 +154,23 @@
         <div class="container col2">
             <div class="slant-form">
                 <div class="main">
-                    <form action="#" class="register-form">
+                    <form action="#" class="register-form" onsubmit="return validate()">
                         <label for="name">YOUR FULL NAME</label><br/>
-                        <input type="text" id="name" class="name" name="name" placeholder="Your Name" oninput="validate()" required/><br/>
+                        <input type="text" id="name" class="name" name="name" placeholder="Your Name" oninput="validateName()" /><br/>
                         <div class="valid-msg" id="nameMsg"></div>
+                
                         <label for="email">YOUR EMAIL</label><br/>
-                        <input type="email" id="r_email" name="email" placeholder="sample@gmail.com" required/><br/>
+                        <input type="email" id="r_email" name="email" placeholder="sample@gmail.com" oninput="validateEmail()" /><br/>
+                        <div class="valid-msg" id="emailMsg"></div>
+                
                         <label for="mobile">MOBILE NUMBER</label><br/>
-                        <input type="text" name="mobile" id="mobile" placeholder="+91 90271498904" required/><br/>
+                        <input type="text" name="mobile" id="mobile" placeholder="+91 90271498904" oninput="validateMobile()" /><br/>
+                        <div class="valid-msg" id="mobileMsg"></div>
+                
                         <label for="colleges">COLLEGES/COURSES</label><br/>
-                        <input type="text" name="colleges" id="colleges" placeholder="MCA/MTECH" required/><br/>
+                        <input type="text" name="colleges" id="colleges" placeholder="MCA/MTECH" oninput="validateColleges()" ><br/>
+                        <div class="valid-msg" id="collegesMsg"></div>
+                
                         <input type="submit" value="SIGN UP NOW" class="signup" id="signup"><br/>
                     </form>
                     <div class="forslant"></div>
@@ -556,7 +563,8 @@
                 <ul>
                     <li class="heading">SUBSCRIBE US</li>
                     <li class="this-sounded">This sounded a very good reason, and Alice was quite pleased.</li>
-                    <li class="mailbox"><input type="email" placeholder="E-mail" id="email" name="email" class="mail-input-box"><a href="#" class="mail-icon"><i class="far fa-envelope"></i></a></li>
+                    <li class="mailbox"><form action="#" onsubmit="return svalidate()"><input type="email" placeholder="E-mail" id="semail" name="email" class="mail-input-box" oninput="validatesEmail()"><button type="submit" class="mail-icon"><i class="far fa-envelope"></i></button></form></li>
+                    <small id="semailMsg"></small>
                 </ul>
             </div>
         </div>
