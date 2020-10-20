@@ -1,0 +1,226 @@
+<!-- Regex for Name: 
+
+Regex for Email: \b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b
+
+Regex fo Email
+---------------------
+/^[AZa-z_.]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+ /^[a-zA-Z0-9.! #$%&'*+/=? ^_`{|}~-]+@[a-zA-Z0-9-]+(?:\. [a-zA-Z0-9-]+)*$/
+
+Regex fo Password
+---------------------
+Minimum eight characters, at least one letter and one number:
+
+"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+Minimum eight characters, at least one letter, one number and one special character:
+
+"^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+Minimum eight characters, at least one uppercase letter, one lowercase letter and one number:
+
+"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character:
+
+"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+Minimum eight and maximum 10 characters, at least one uppercase letter, one lowercase letter, one number and one special character:
+
+"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$" 
+
+Regex for mobile Number
+-----------------------
+
+/^([+]\d{2})?\d{10}$/
+
+
+
+
+////////////////////////Validation by rahul sir ///////////////////////////
+// function validateInput(element) {
+//     const alphabetRegex = /^[a-zA-Z]*$/;
+
+//     if(element.value){
+//         if(alphabetRegex.test(element.value)){
+//             errors["nameError"] = "";
+//         }else{
+//             errors["nameError"] = "Name is invalid."    
+//         }
+//     }else{
+//         errors["nameError"] = "Name cannot be null."
+//     }
+// }
+
+
+/////////////////////////////////////////////////////////////////////
+
+        function validateName(){
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('r_email').value;
+            const mobile = document.getElementById('mobile').value;
+            const collages = document.getElementById('colleges').value;
+
+            var nameRegex =  /^[a-zA-Z\\s]*$/;
+            var emailRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+            var mobileRegex = /^([+]\d{2})?\d{10}$/;
+            var collegesRegex = /^[a-zA-Z]*$/;
+
+            //for name
+            var nameError = "";
+            var isName = true;
+            if(name == ""){
+                nameError = "Name can't be blank";
+                isName = false;
+            }else{
+                if(nameRegex.test(name)){
+                    nameError = "*valid";
+                }else{
+                    nameError = "*Name is invalid";
+                    isName = false;
+                }
+            }
+            document.getElementById('nameMsg').innerHTML=nameError;
+
+            // //for email
+            // var emailError = "";
+            // var isTrue = true;
+            // if(name == ""){
+            //     emailError = "Email can't be blank";
+            //     isName = false;
+            // }else{
+            //     if(emailRegex.test(email)){
+            //         emailError = "*valid";
+            //     }else{
+            //         emailError = "*Email is invalid";
+            //         isName = false;
+            //     }
+            // }
+            // document.getElementById('emailMsg').innerHTML=nameError;
+
+            // //for mobile
+            // var mobileError = "";
+            // var isTrue = true;
+            // if(name == ""){
+            //     mobileError = "Mobile can't be blank";
+            //     isName = false;
+            // }else{
+            //     if(mobileRegex.test(mobile)){
+            //         mobileError = "*valid";
+            //     }else{
+            //         mobileError = "*Mobile is invalid";
+            //         isName = false;
+            //     }
+            // }
+            // document.getElementById('mobileMsg').innerHTML=nameError;
+
+            // //for colleges
+            // var collegesError = "";
+            // var isTrue = true;
+            // if(name == ""){
+            //     collegesError = "Colleges can't be blank";
+            //     isName = false;
+            // }else{
+            //     if(collegesRegex.test(colleges)){
+            //         collegesError = "*valid";
+            //     }else{
+            //         collegesError = "*Colleges is invalid";
+            //         isName = false;
+            //     }
+            // }
+            // document.getElementById('collegesMsg').innerHTML=nameError;
+
+            // // if()
+
+
+            return isName;
+        }
+
+
+
+        validate_fee_header_create(element, validation_error) {
+        let regex_number = /^[0-9]*$/;
+        if (element.name === "course_name") {
+            if (!_.isEmpty(element.value)) {
+                validation_error["course_error"] = null;
+            } else {
+                validation_error["course_error"] = "Course Required";
+            }
+        } else if (element.name === "sesssion_name") {
+            if (!_.isEmpty(element.value)) {
+                validation_error["session_name_error"] = null;
+            } else {
+                validation_error["session_name_error"] = " Session Required";
+            }
+        }else if (element.name === "batch_name") {
+            if (!_.isEmpty(element.value)) {
+                validation_error["batch_error"] = null;
+            } else {
+                validation_error["batch_error"] = " Batch Required";
+            }
+        }else if (element.name === "fee_header") {
+            if (!_.isEmpty(element.value)) {
+                validation_error["feeheader_error"] = null;
+            } else {
+                validation_error["feeheader_error"] = " Fee Header Required";
+            }
+        } else if (element.name === "priority") {
+            if (!_.isEmpty(element.value)) {
+                if (!regex_number.test(element.value)) {
+                    validation_error["priority_error"] = "Only Number Allow";
+                } else {
+                    validation_error["priority_error"] = null;
+                }
+            } else {
+                validation_error["priority_error"] = " Enter Amount Required";
+            }
+        }
+        else if (element.name === "amount") {
+            if (!_.isEmpty(element.value)) {
+                if (!regex_number.test(element.value)) {
+                    validation_error["amount_error"] = "Only Number Allow";
+                } else {
+                    validation_error["amount_error"] = null;
+                }
+            } else {
+                validation_error["amount_error"] = " Enter Amount Required";
+            }
+        }
+        else if (element.name === "fee_header_name") {
+            if (!_.isEmpty(element.value)) {
+                validation_error["fee_header_name_error"] = null;
+            } else {
+                validation_error["fee_header_name_error"] = "Fee Header Required";
+            }
+        }
+        return validation_error;
+    }
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full form validation by regex</title>
+    <script src="js/validation.js"></script>
+  
+</head>
+<body>
+    <form action="#" class="register-form" onsubmit="return validate()">
+        <label for="name">YOUR FULL NAME</label><br/>
+        <input type="text" id="name" class="name" name="name" placeholder="Your Name" oninput="validateName()" /><br/>
+        <div class="valid-msg" id="nameMsg"></div>
+
+        <label for="email">YOUR EMAIL</label><br/>
+        <input type="email" id="r_email" name="email" placeholder="sample@gmail.com" oninput="validateEmail()" /><br/>
+        <div class="valid-msg" id="emailMsg"></div>
+
+        <label for="mobile">MOBILE NUMBER</label><br/>
+        <input type="text" name="mobile" id="mobile" placeholder="+91 90271498904" oninput="validateMobile()" /><br/>
+        <div class="valid-msg" id="mobileMsg"></div>
+
+        <label for="colleges">COLLEGES/COURSES</label><br/>
+        <input type="text" name="colleges" id="colleges" placeholder="MCA/MTECH" oninput="validateColleges()" ><br/>
+        <div class="valid-msg" id="collegesMsg"></div>
+
+        <input type="submit" value="SIGN UP NOW" class="signup" id="signup"><br/>
+    </form>
+</body>
+</html>
