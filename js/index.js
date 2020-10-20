@@ -1,4 +1,4 @@
-
+/*--Master Branch--*/
 /*------------------------Validation for registration form--------------------------------------------*/         
     //for name
     function validateName(){
