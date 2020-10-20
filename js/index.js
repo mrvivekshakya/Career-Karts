@@ -74,7 +74,7 @@
     //for Colleges
     function validateColleges(){
         const colleges = document.getElementById('colleges').value;
-        var collegesRegex = /^[a-zA-Z]*$/;
+        var collegesRegex = /^[a-zA-Z ]*$/;
 
         var collegesError = "";
         var isCollege = true;
@@ -100,12 +100,12 @@
         const collages = document.getElementById('colleges').value;
         if(validateName(name) && validateEmail(email) && validateMobile(mobile) && validateColleges(colleges)){
             return true;
-        }else{
-            validateName();
-            validateEmail();
-            validateMobile();
-            validateColleges();
-            return false;
+            }else{
+                validateName();
+                validateEmail();
+                validateMobile();
+                validateColleges();
+                return false;
         }
     }
 
