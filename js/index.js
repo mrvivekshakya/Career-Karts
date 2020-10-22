@@ -1,14 +1,16 @@
 /*--Master Branch--*/
-/*------------------------Validation for registration form--------------------------------------------*/         
+/*------------------------Validation for registration form--------------------------------------------*/   
+
+    //function to check blank
     //for name
     function validateName(){
         const name = document.getElementById('name').value;
 
         var nameRegex =  /^[a-zA-Z ]*$/;
 
-        var nameError = "";
+        var nameError = " ";
         var isName = true;
-        if(name == ""){
+        if(name[0] == " "){
             nameError = "<font color='red'>**Name can't be blank.</font>";
             isName = false;
         }else{
@@ -78,7 +80,7 @@
 
         var collegesError = "";
         var isCollege = true;
-        if(colleges == ""){
+        if(colleges[0] == " "){
             collegesError = "<font color='red'>**Colleges/Courses can't be blank.</font>";
             isCollege = false;
         }else{
